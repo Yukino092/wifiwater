@@ -1,0 +1,51 @@
+# ============================================
+#  敏感配置（绝对不要提交）
+# ============================================
+# 固件：WiFi 账号、MQTT 账号、设备 MAC
+secrets.h
+# App：broker 地址与账号密码
+secrets.dart
+
+# ============================================
+#  ESP-IDF 构建产物
+# ============================================
+firmware/build/
+firmware/sdkconfig.old
+firmware/managed_components/
+firmware/.vscode/
+firmware/.devcontainer/
+
+# 应用固件镜像：二进制里含明文 WiFi 密码 / MQTT 账号，绝不能提交
+# （tools/flash_package 里的 bootloader / 分区表 / otadata 不含密钥，可以保留）
+Wifitry.bin
+**/Wifitry.bin
+
+# ============================================
+#  Flutter / Android 构建产物
+# ============================================
+app/build/
+app/.dart_tool/
+app/.gradle/
+app/.idea/
+app/*.iml
+app/android/.gradle/
+app/android/app/build/
+app/android/build/
+app/android/local.properties
+app/android/key.properties
+app/ios/Pods/
+app/windows/flutter/ephemeral/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# ============================================
+#  编辑器 / 系统
+# ============================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

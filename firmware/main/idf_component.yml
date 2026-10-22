@@ -1,0 +1,5 @@
+dependencies:
+  espressif/ds18b20: "*"
+  espressif/esp-sr: "*"
+  espressif/esp_xiaozhi: "*"
+  espressif/esp_audio_codec: "*"

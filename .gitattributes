@@ -1,0 +1,15 @@
+# 统一换行处理
+* text=auto
+
+# .bat 必须保持 CRLF，否则 Windows cmd 会解析错乱（历史上踩过这个坑）
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# 二进制文件不做换行/文本处理
+*.bin   binary
+*.exe   binary
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jks   binary
+*.keystore binary
